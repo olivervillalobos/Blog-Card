@@ -1,79 +1,54 @@
-.card{
-    background-color: $neutral-white;
-    width: 350px;
-    padding: $space-20px;
+.card {
+  background-color: $neutral-white;
+  max-width: 21.875rem;
+  padding: $space-20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.625rem;
+  border-radius: 0.938rem;
+  border: 0.125rem solid $neutral-black;
+  box-shadow: 0.563rem 0.563rem 0 0 $neutral-black;
+  .card_image {
+    width: $width-100per;
+    height: auto;
+    border-radius: 0.938rem;
+  }
+  .card_status {
+    font-weight: $font-weight-800;
+    font-size: $span-size;
+    background-color: $primary-yellow;
+    padding: 0.313rem 0.625rem;
+    border-radius: 0.188rem;
+  }
+  .card_date {
+    width: $width-100per;
+    font-size: $span-size;
+    font-weight: $font-weight-500;
+  }
+  .card_title {
+    width: $width-100per;
+    font-size: $title-size;
+    font-weight: $font-weight-800;
+  }
+  .card_description {
+    width: $width-100per;
+    font-size: 0.938rem;
+    color: $neutral-grey;
+  }
+  .card_teacher {
+    width: $width-100per;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 15px;
-    border: 2px solid $neutral-black;
-    .card_image{
-        width: $width-100per;
-        img{
-            width: $width-100per;
-            height: auto;
-            border-radius: 15px;
-        }
+    gap: 0.625rem;
+    .card_teacher_image {
+      height: 2.188rem;
+      width: 2.188rem;
     }
-    .card_status{
-        width: $width-100per;
-        span{
-            font-weight: $font-weight-800;
-            font-size: $span-size;
-            background-color: $primary-yellow;
-            padding: 5px 10px;
-            border-radius: 3px;
-        }
+    .card_teacher_name {
+      font-size: $paragraph-size;
+      font-weight: 800;
     }
-    .card_date{
-        width: $width-100per;
-        span{
-            font-size: $span-size;
-            font-weight: $font-weight-500;
-        }
-    }
-    .card_title{
-        width: $width-100per;
-        h1{
-            font-size: $title-size;
-            font-weight: $font-weight-800;
-        }
-    }
-    .card_description{
-        width: $width-100per;
-        p{
-            font-size: 15px;
-            color: $neutral-grey;
-        }
-    }
-    .card_teacher{
-        width: $width-100per;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        .card_teacher_image{
-            img{
-                height: 35px;
-                width: 35px;
-            }
-        }
-        .card_teacher_name{
-            span{
-                font-size: $paragraph-size;
-                font-weight: 800;
-            }
-        }
-    }
-}
-.card:hover{
-    transition: all 0.5s;
-    box-shadow: 9px 9px 0px 0px $neutral-black;
-    scale: 1.05;
-}
-.card:not(:hover){
-    transition: all 0.5s;
-    box-shadow: 0px 0px 0px 0px $neutral-black;
-    scale: 1;
+  }
 }

@@ -1,8 +1,10 @@
-body{
+body
+{
+    font-family: 'Figtree';
     background-color: $primary-yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }

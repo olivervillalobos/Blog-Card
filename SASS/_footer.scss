@@ -1,10 +1,10 @@
-.attribution{
-    position:absolute;
-    bottom: 0;
-    margin-bottom: 5px;
-}
-@media (max-height: 483px){
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .attribution{
-        display: none;
+        position:absolute;
+        bottom: 0;
+        margin-bottom: 0.313rem;
     }
 }
