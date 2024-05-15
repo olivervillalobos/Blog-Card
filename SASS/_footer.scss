@@ -1,0 +1,10 @@
+.attribution{
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+@media (max-height: 483px){
+    .attribution{
+        display: none;
+    }
+}

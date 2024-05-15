@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Figtree;
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Figtree Italic";
+  src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-family: "Figtree";
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 2px solid hsl(0, 0%, 7%);
+}
+.card .card_image {
+  width: 100%;
+}
+.card .card_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.card .card_status {
+  width: 100%;
+}
+.card .card_status span {
+  font-weight: 800;
+  font-size: 12px;
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.card .card_date {
+  width: 100%;
+}
+.card .card_date span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.card .card_title {
+  width: 100%;
+}
+.card .card_title h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.card .card_description {
+  width: 100%;
+}
+.card .card_description p {
+  font-size: 15px;
+  color: hsl(0, 0%, 50%);
+}
+.card .card_teacher {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card .card_teacher .card_teacher_image img {
+  height: 35px;
+  width: 35px;
+}
+.card .card_teacher .card_teacher_name span {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.card:hover {
+  transition: all 0.5s;
+  box-shadow: 9px 9px 0px 0px hsl(0, 0%, 7%);
+  scale: 1.05;
+}
+
+.card:not(:hover) {
+  transition: all 0.5s;
+  box-shadow: 0px 0px 0px 0px hsl(0, 0%, 7%);
+  scale: 1;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+
+@media (max-height: 483px) {
+  .attribution {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
