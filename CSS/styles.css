@@ -71,7 +71,7 @@ body {
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  max-width: 21.875rem;
+  max-width: 21.875rem !important;
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -128,11 +128,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 1.1rem;
 }
 footer .attribution {
   position: absolute;
   bottom: 0;
-  margin-bottom: 0.313rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

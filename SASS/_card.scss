@@ -1,6 +1,6 @@
 .card {
   background-color: $neutral-white;
-  max-width: 21.875rem;
+  max-width: 21.875rem !important;
   padding: $space-20px;
   display: flex;
   flex-direction: column;
